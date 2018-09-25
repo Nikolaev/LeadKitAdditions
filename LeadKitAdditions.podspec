@@ -22,7 +22,11 @@ Pod::Spec.new do |s|
     ss.dependency "CryptoSwift", '~> 0.9.0'
     ss.dependency "SwiftValidator", '5.0.0'
     ss.dependency "PinLayout", '~> 1.6'
-
+    ss.dependency "RxSwift", '~> 4.1'
+    ss.dependency "RxCocoa", '~> 4.1'
+    ss.dependency "RxAlamofire", '~> 4.1'
+    ss.dependency "SwiftDate", '~> 4.5'
+    ss.ios.dependency "TableKit", '~> 2.6'
   end
 
   s.subspec 'Core-iOS-Extension' do |ss|
@@ -40,6 +44,11 @@ Pod::Spec.new do |s|
     ss.dependency "CryptoSwift", '~> 0.9.0'
     ss.dependency "SwiftValidator", '5.0.0'
     ss.dependency "PinLayout", '~> 1.6'
+    ss.dependency "RxSwift", '~> 4.1'
+    ss.dependency "RxCocoa", '~> 4.1'
+    ss.dependency "RxAlamofire", '~> 4.1'
+    ss.dependency "SwiftDate", '~> 4.5'
+    ss.ios.dependency "TableKit", '~> 2.6'
   end
 
   s.default_subspec = 'Core'
