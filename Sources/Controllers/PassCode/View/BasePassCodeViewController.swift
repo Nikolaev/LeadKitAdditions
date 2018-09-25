@@ -49,7 +49,10 @@ public enum PassCodeControllerState {
 /// Base view controller that operates with pass code
 open class BasePassCodeViewController: UIViewController, ConfigurableController {
 
-    public var viewModel: BasePassCodeViewModel!
+    public typealias ViewModelT = BasePassCodeViewModel
+
+    public var viewModel = BasePassCodeViewModel(controllerType: PassCodeControllerType.change,
+                                                 passCodeConfiguration: PassCodeConfiguration.defaultConfiguration)
 
     // MARK: - IBOutlets
 

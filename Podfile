@@ -15,15 +15,16 @@ abstract_target 'LeadKitAdditions' do
 
     use_frameworks!
 
-    pod 'LeadKit', '~> 0.7.0'
+    pod 'LeadKit', :git => 'https://github.com/Nikolaev/LeadKit', :branch => 'feature/xcode10-swift4'
+    #pod 'LeadKit', '~> 0.7.0'
   end
 
   target 'LeadKitAdditions iOS Extensions' do
     platform :ios, '9.0'
 
     use_frameworks!
-
-    pod "LeadKit/Core-iOS-Extension", '~> 0.7.0'
+    pod 'LeadKit/Core-iOS-Extension', :git => 'https://github.com/Nikolaev/LeadKit', :branch => 'feature/xcode10-swift4'
+    #pod "LeadKit/Core-iOS-Extension", '~> 0.7.0'
   end
 end
 
