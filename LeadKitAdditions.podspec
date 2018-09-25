@@ -7,6 +7,7 @@ Pod::Spec.new do |s|
   s.author          = "Touch Instinct"
   s.platform        = :ios, "9.0"
   s.source          = { :git => "https://github.com/TouchInstinct/LeadKitAdditions.git", :tag => s.version }
+  s.swift_version = '4'
 
   s.subspec 'Core' do |ss|
     ss.ios.deployment_target = '9.0'
