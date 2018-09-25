@@ -80,11 +80,11 @@ open class LabelTableViewCell: SeparatorTableViewCell {
     }
 
     private var labelInsets: UIEdgeInsets {
-        return viewModel?.labelInsets ?? .nonCrashZero
+        return viewModel?.labelInsets ?? .zero
     }
 
     private var contentInsets: UIEdgeInsets {
-        return viewModel?.contentInsets ?? .nonCrashZero
+        return viewModel?.contentInsets ?? .zero
     }
 
     override open var contentHeight: CGFloat {

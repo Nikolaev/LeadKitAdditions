@@ -15,7 +15,7 @@ abstract_target 'LeadKitAdditions' do
 
     use_frameworks!
 
-    pod 'LeadKit', :git => 'https://github.com/TouchInstinct/LeadKit.git', :branch => 'feature/swift4.2'
+    pod 'LeadKit', :git => 'https://github.com/Nikolaev/LeadKit.git', :branch => 'feature/swift4.2-dependency-fix'
   end
 
   target 'LeadKitAdditions iOS Extensions' do
@@ -23,7 +23,7 @@ abstract_target 'LeadKitAdditions' do
 
     use_frameworks!
 
-    pod "LeadKit/Core-iOS-Extension", :git => 'https://github.com/TouchInstinct/LeadKit.git', :branch => 'feature/swift4.2'
+    pod "LeadKit/Core-iOS-Extension", :git => 'https://github.com/Nikolaev/LeadKit.git', :branch => 'feature/swift4.2-dependency-fix'
   end
 end
 
