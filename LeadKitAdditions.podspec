@@ -17,7 +17,6 @@ Pod::Spec.new do |s|
       "Sources/Services/Network/DefaultNetworkService+ActivityIndicator+Extension.swift",
     ]
 
-    ss.dependency "LeadKit", '~> 0.9.0'
     ss.dependency "KeychainAccess", '3.1.0'
     ss.dependency "CryptoSwift", '~> 0.9.0'
     ss.dependency "SwiftValidator", '5.0.0'
@@ -28,7 +27,7 @@ Pod::Spec.new do |s|
   s.subspec 'Core-iOS-Extension' do |ss|
     ss.platform = :ios, '9.0'
 
-	ss.source_files = "Sources/**/*.swift"
+	  ss.source_files = "Sources/**/*.swift"
 
     ss.exclude_files = [
       "Sources/Classes/Cells/LabelTableViewCell/*.swift",
@@ -36,7 +35,6 @@ Pod::Spec.new do |s|
       "Sources/Extensions/Cells/**/*.swift"
     ]
 
-    ss.dependency "LeadKit/Core-iOS-Extension", '~> 0.9.0'
     ss.dependency "KeychainAccess", '3.1.0'
     ss.dependency "CryptoSwift", '~> 0.9.0'
     ss.dependency "SwiftValidator", '5.0.0'
